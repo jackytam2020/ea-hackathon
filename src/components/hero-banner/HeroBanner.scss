@@ -1,13 +1,13 @@
-@use '../../styles/partials/fonts';
+@use "../../styles/partials/fonts";
+@use "../../styles/partials/colors" as *;
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  font-family: 'Electronic Arts Text';
-  box-sizing: border-box;
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
 }
 
 .hero {
@@ -17,10 +17,12 @@ body {
   width: 100%;
   height: 75vh;
   padding: 3rem 8rem;
-  background: rgba(0, 0, 0, 0.8);
+  background-image: linear-gradient(to right, $EANavy 0%, $EANavy 45%, $EAMaroon);
 
   &__text {
     color: white;
+    margin-right: 10rem;
+    line-height: normal;
   }
 
   &__title {
@@ -44,12 +46,20 @@ body {
   .button {
     padding: 1rem;
     outline: none;
-    font-family: 'Electronic Arts Text';
+    font-family: "Electronic Arts Text";
     font-size: 1rem;
     border-radius: 0.25rem;
-    background-color: #ff4747;
     border: none;
     color: white;
+    cursor: pointer;
+
+    background-size: 200%;
+    background-image: linear-gradient(to left, $EAOrange, $EABlue, $EAOrange);
+
+    &:hover {
+      animation: 1.5s linear infinite placeHolderShimmer;
+      background-position: right;
+    }
 
     margin-right: 1rem;
   }

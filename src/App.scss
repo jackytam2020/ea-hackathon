@@ -1,2 +1,14 @@
-.App {
+@use "./styles/partials/fonts";
+@use "./styles/partials/colors";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Electronic Arts Text";
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  box-sizing: border-box;
 }
