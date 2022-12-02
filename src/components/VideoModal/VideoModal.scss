@@ -1,0 +1,15 @@
+.video-modal {
+  &__overlay {
+    position: fixed;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__modal-container {
+    margin: 0 auto;
+    margin-top: 10rem;
+    height: 400px;
+    width: 50rem;
+    position: relative;
+  }
+}
