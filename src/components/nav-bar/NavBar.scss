@@ -13,16 +13,19 @@ body {
 
 .nav {
   display: flex;
+  position: fixed;
+  top: 80px;
+  overflow: hidden;
   background-color: white;
   box-sizing: border-box;
   justify-content: space-between;
-  width: 100%;
+  width: 99.2%;
   height: 4rem;
   transition-duration: 0.4s;
 
   &--fixed {
-    position: fixed;
-    top: 0;
+    transform: translate3d(0, -80px, 0);
+    z-index: 100;
   }
 
   &__logo {
@@ -34,6 +37,8 @@ body {
   }
 
   &__drop-down-container {
+    overflow: hidden;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     background-color: white;

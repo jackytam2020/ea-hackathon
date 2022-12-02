@@ -1,5 +1,5 @@
-@use '../../styles/partials/fonts';
-@use '../../styles/partials/colors' as *;
+@use "../../styles/partials/fonts";
+@use "../../styles/partials/colors" as *;
 
 @keyframes placeHolderShimmer {
   0% {
@@ -14,6 +14,8 @@
   display: flex;
   box-sizing: border-box;
   align-items: center;
+
+  margin-top: 5rem;
   width: 100%;
   height: 65vh;
   padding: 3rem 8rem;
@@ -46,7 +48,7 @@
     position: relative;
     padding: 0.75rem 3.25rem 0.75rem 1rem;
     outline: none;
-    font-family: 'Electronic Arts Text';
+    font-family: "Electronic Arts Text";
     font-size: 1rem;
     border-radius: 0.25rem;
     border: none;
