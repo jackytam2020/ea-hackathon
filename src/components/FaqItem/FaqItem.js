@@ -12,7 +12,7 @@ function FaqItem(props) {
           className="faq-item__dropdown-icon"
           src={DropDownIcon}
           onClick={() => {
-            setOpenResponse(true);
+            setOpenResponse(!openResponse);
           }}
         />
       </div>
