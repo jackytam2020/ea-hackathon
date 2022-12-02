@@ -6,6 +6,8 @@ function Faq(props) {
   const faqItems = [
     {
       question: 'How will the download work?',
+      response:
+        'EA App download begins & Origin will be uninstalled automatically to ensure an optimal user experience',
     },
     {
       question: 'What will happen to my current games and content?',
