@@ -1,6 +1,5 @@
 .carousel-container {
-  height: 15vh;
-  background-color: grey;
+  height: 25vh;
   padding: 1rem 1rem 1rem 1rem;
 }
 
@@ -8,7 +7,7 @@
   display: grid;
   height: 100%;
   grid-auto-flow: column;
-  grid-auto-columns: 23%;
+  grid-auto-columns: 13%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   gap: 2rem;

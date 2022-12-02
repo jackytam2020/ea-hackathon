@@ -1,21 +1,11 @@
+@use '../styles/partials/fonts';
+@use '../styles/partials/colors' as *;
+
 .home {
-  height: 100vh;
-}
-
-.right-bar {
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 100px;
-  background: red;
-  position: sticky;
-}
-
-.left-bar {
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100px;
-  background: blue;
-  position: sticky;
+  background-image: linear-gradient(
+    to right,
+    $EANavy 0%,
+    $EANavy 45%,
+    $EAMaroon
+  );
 }
