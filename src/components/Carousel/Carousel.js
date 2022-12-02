@@ -11,36 +11,6 @@ function Carousel(props) {
 
   const carouselImgs = [
     {
-      name: 'ApexLegends',
-      src: 'apexlegends.jpg',
-      videoSrc: 'https://www.youtube.com/embed/Ha_VsTDmoGg',
-    },
-    {
-      name: 'Deadspace',
-      src: 'deadspace.jpg',
-      videoSrc: 'https://www.youtube.com/embed/cTDJNZ9cK1w',
-    },
-    {
-      name: 'Fifa',
-      src: 'fifa.png',
-      videoSrc: 'https://www.youtube.com/embed/k8m9plRwMgk',
-    },
-    {
-      name: 'Madden',
-      src: 'madden-nfl-23.jpg',
-      videoSrc: 'https://www.youtube.com/embed/Qv6G_w8RUOo',
-    },
-    {
-      name: 'NeedForSpeed',
-      src: 'nfsunbound.jpg',
-      videoSrc: 'https://www.youtube.com/embed/YM6nUa2_EBQ',
-    },
-    {
-      name: 'Sims',
-      src: 'sims.png',
-      videoSrc: 'https://www.youtube.com/embed/GJENRAB4ykA',
-    },
-    {
       name: 'legends',
       src: 'legends.png',
       videoSrc: 'https://www.youtube.com/embed/F3-BJfhnlWY',
@@ -59,6 +29,37 @@ function Carousel(props) {
       name: 'masseffect',
       src: 'masseffect.png',
       videoSrc: 'https://www.youtube.com/embed/n8i53TtQ6IQ',
+    },
+    {
+      name: 'Sims',
+      src: 'sims.png',
+      videoSrc: 'https://www.youtube.com/embed/GJENRAB4ykA',
+    },
+    {
+      name: 'Madden',
+      src: 'madden-nfl-23.jpg',
+      videoSrc: 'https://www.youtube.com/embed/Qv6G_w8RUOo',
+    },
+    {
+      name: 'ApexLegends',
+      src: 'apexlegends.jpg',
+      videoSrc: 'https://www.youtube.com/embed/Ha_VsTDmoGg',
+    },
+    {
+      name: 'Deadspace',
+      src: 'deadspace.jpg',
+      videoSrc: 'https://www.youtube.com/embed/cTDJNZ9cK1w',
+    },
+    {
+      name: 'Fifa',
+      src: 'fifa.png',
+      videoSrc: 'https://www.youtube.com/embed/k8m9plRwMgk',
+    },
+
+    {
+      name: 'NeedForSpeed',
+      src: 'nfsunbound.jpg',
+      videoSrc: 'https://www.youtube.com/embed/YM6nUa2_EBQ',
     },
   ];
 
