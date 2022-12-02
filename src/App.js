@@ -1,14 +1,7 @@
-import "./App.scss";
-import HeroBanner from "./components/hero-banner/HeroBanner";
-import NavBar from "./components/nav-bar/NavBar";
+import './App.scss';
 
 function App() {
-  return (
-    <>
-      <NavBar></NavBar>
-      <HeroBanner></HeroBanner>
-    </>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;

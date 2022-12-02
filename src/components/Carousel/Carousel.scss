@@ -1,0 +1,40 @@
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 10%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  gap: 5rem;
+  cursor: grab;
+
+  &__item {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+
+    background-color: aquamarine;
+    padding: 2rem;
+  }
+
+  &__snaps {
+    scroll-snap-type: mandatory inline;
+  }
+
+  &__snaps > * {
+    scroll-snap-align: start;
+  }
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: darkgrey;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 20px;
+}
