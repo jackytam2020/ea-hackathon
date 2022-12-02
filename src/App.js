@@ -1,10 +1,10 @@
-import "./App.scss";
-import GraphicsSection from "./components/graphicsSection/GraphicsSection";
+import './App.scss';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
     <>
-      <GraphicsSection />
+      <HomePage />
     </>
   );
 }

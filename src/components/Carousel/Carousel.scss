@@ -1,14 +1,17 @@
 .carousel {
   display: grid;
+  height: 15vh;
   grid-auto-flow: column;
   grid-auto-columns: 10%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   gap: 5rem;
   cursor: grab;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
   &__item {
-    height: 100px;
+    height: 100%;
     width: 100px;
     border-radius: 10px;
 
