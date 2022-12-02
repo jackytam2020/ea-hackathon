@@ -11,17 +11,22 @@
 }
 
 .hero {
-  display: flex;
   box-sizing: border-box;
   align-items: center;
 
-  margin-top: 5rem;
+  margin: 5rem 0rem;
+  margin-bottom: 15rem;
   width: 100%;
   height: 65vh;
   padding: 3rem 8rem;
 
+  &__top {
+    width: 100%;
+    display: flex;
+  }
   &__text {
     color: white;
+    padding-top: 3rem;
     margin-right: 10rem;
     line-height: normal;
   }
@@ -42,6 +47,21 @@
     overflow: hidden;
     &-container {
     }
+  }
+
+  &__carousel-text {
+    margin-top: 4rem;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  &__subtext {
+    margin: 0rem 32rem;
+    font-size: 1rem;
   }
 
   .button {

@@ -1,11 +1,11 @@
-@use '../styles/partials/fonts' as *;
-@use '../styles/partials/colors' as *;
+@use "../styles/partials/fonts" as *;
+@use "../styles/partials/colors" as *;
 
 .home {
-  background-image: linear-gradient(
-    to right,
-    $EANavy 0%,
-    $EANavy 45%,
-    $EAMaroon
-  );
+  background-image: linear-gradient(to right, $EANavy 0%, $EANavy 45%, $EAMaroon);
+}
+
+.footer {
+  margin-top: 2rem;
+  width: 100%;
 }
