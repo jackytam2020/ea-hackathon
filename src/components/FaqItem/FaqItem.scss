@@ -1,0 +1,25 @@
+@use '../../styles/partials/colors' as *;
+
+.faq-item {
+  width: 100%;
+  height: 116px;
+  border-radius: 20px;
+  background-color: $EADarkblue;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+
+  p {
+    color: white;
+    font-size: 18px;
+  }
+
+  &__dropdown-icon {
+    height: 2rem;
+    width: 2rem;
+  }
+}
