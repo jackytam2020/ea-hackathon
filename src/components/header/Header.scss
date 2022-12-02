@@ -10,6 +10,11 @@
   align-items: center;
   padding: 1rem 3rem;
   width: 100%;
+  transition-duration: 0.4s;
+
+  &--hidden {
+    transform: translate3d(0, -40px, 0);
+  }
 
   &__button {
     margin-right: 1rem;

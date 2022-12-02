@@ -18,6 +18,12 @@ body {
   padding: 0rem 3rem;
   width: 100%;
   height: 4rem;
+  transition-duration: 0.4s;
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+  }
 
   &__logo {
     height: 3rem;
