@@ -1,0 +1,21 @@
+.home {
+  height: 100vh;
+}
+
+.right-bar {
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100px;
+  background: red;
+  position: sticky;
+}
+
+.left-bar {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100px;
+  background: blue;
+  position: sticky;
+}

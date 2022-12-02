@@ -10,9 +10,7 @@ function HomePage(props) {
   return (
     <div className="home">
       <NavBar />
-      {/* <section className="home__hero"> */}
       <HeroBanner />
-      {/* </section> */}
       <Carousel />
       <GraphicsSection />
     </div>

@@ -1,43 +1,26 @@
+.carousel-container {
+  height: 15vh;
+  background-color: grey;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
 .carousel {
   display: grid;
-  height: 15vh;
+  height: 100%;
   grid-auto-flow: column;
-  grid-auto-columns: 10%;
+  grid-auto-columns: 23%;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
-  gap: 5rem;
-  cursor: grab;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  gap: 2rem;
 
   &__item {
     height: 100%;
-    width: 100px;
+    width: 100%;
     border-radius: 10px;
-
     background-color: aquamarine;
-    padding: 2rem;
-  }
-
-  &__snaps {
-    scroll-snap-type: mandatory inline;
-  }
-
-  &__snaps > * {
-    scroll-snap-align: start;
   }
 }
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
 
-::-webkit-scrollbar-track {
-  background: darkgrey;
-  border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: grey;
-  border-radius: 20px;
+.carousel::-webkit-scrollbar {
+  display: none;
 }

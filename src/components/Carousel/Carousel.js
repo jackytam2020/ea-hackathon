@@ -7,16 +7,18 @@ function Carousel(props) {
   const { events } = useDraggable(ref);
 
   return (
-    <div className="carousel carousel__snaps" {...events} ref={ref}>
-      <div className="carousel__item"></div>
-      <div className="carousel__item"></div>
-      <div className="carousel__item"></div>
-      <div className="carousel__item"></div>
-      <div className="carousel__item"></div>
-      <div className="carousel__item"></div>
-      <div className="carousel__item"></div>
-      <div className="carousel__item"></div>
-      <div className="carousel__item"></div>
+    <div className="carousel-container">
+      <div className="carousel" {...events} ref={ref}>
+        <div className="carousel__item"></div>
+        <div className="carousel__item"></div>
+        <div className="carousel__item"></div>
+        <div className="carousel__item"></div>
+        <div className="carousel__item"></div>
+        <div className="carousel__item"></div>
+        <div className="carousel__item"></div>
+        <div className="carousel__item"></div>
+        <div className="carousel__item"></div>
+      </div>
     </div>
   );
 }
