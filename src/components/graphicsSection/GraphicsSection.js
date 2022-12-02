@@ -6,7 +6,7 @@ import eaApp from "../../assets/images/ea-app-HD-scaled 2.png";
 export default function GraphicsSection() {
   const options1 = {
     threshold: 0,
-    rootMargin: "0px 0px -100px 0px",
+    rootMargin: "0px 0px -250px 0px",
     trackVisibility: true,
     delay: 500,
   };
@@ -17,7 +17,7 @@ export default function GraphicsSection() {
     delay: 100,
   };
   const options3 = {
-    rootMargin: "0px 0px -100px 0px",
+    rootMargin: "0px 0px -250px 0px",
     threshold: 0,
     trackVisibility: true,
     delay: 500,
@@ -95,7 +95,7 @@ export default function GraphicsSection() {
           <div className="graphics__text-container">
             <h2
               ref={myRef4}
-              className={`graphics__text ${
+              className={`graphics__subheader ${
                 myElementIsVisible4
                   ? "graphics__subheader--up"
                   : "graphics__subheader--down"
