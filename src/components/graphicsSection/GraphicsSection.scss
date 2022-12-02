@@ -32,8 +32,10 @@
     margin: 0;
     align-items: center;
     border-radius: 1.25rem;
+    opacity: 0;
     &--up {
-      transition: transform 400ms ease-in;
+      transition: all 0.5s;
+      opacity: 1;
       transform: translateY(0);
     }
     &--down {
