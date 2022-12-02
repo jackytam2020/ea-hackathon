@@ -1,6 +1,7 @@
 import "./HeroBanner.scss";
 
 import HeroImage from "../../assets/images/hero-banner.jpg";
+import WindowsLogo from "../../assets/images/windowsLogo.png";
 
 export default function HeroBanner() {
   return (
@@ -11,8 +12,10 @@ export default function HeroBanner() {
           <h3 className="hero__subtitle">Powering EA’s next generation of PC gaming</h3>
         </div>
         <div className="hero__buttons">
-          <button className="button">Download for Windows</button>
-          <button className="button">Download for MacOS</button>
+          <button className="button">
+            EA App for
+            <img src={WindowsLogo} alt="windows operating system icon" className="button__icon"></img>
+          </button>
         </div>
       </div>
       <div className="hero--right hero__image-container">
