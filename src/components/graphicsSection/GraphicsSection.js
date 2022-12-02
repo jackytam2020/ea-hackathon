@@ -1,7 +1,7 @@
 import "./GraphicsSection.scss";
 import { useInView } from "react-intersection-observer";
 import gamer from "../../assets/images/gamer.png";
-import eaApp from "../../assets/images/ea-app-HD-scaled 2.png";
+import eaApp from "../../assets/images/hero-banner.png";
 
 export default function GraphicsSection() {
   const options1 = {
@@ -40,39 +40,26 @@ export default function GraphicsSection() {
           <div
             ref={myRef1}
             className={`graphics__image-container ${
-              myElementIsVisible1
-                ? "graphics__image-container--up"
-                : "graphics__image-container--down"
+              myElementIsVisible1 ? "graphics__image-container--up" : "graphics__image-container--down"
             }`}
           >
-            <img
-              className="graphics__image"
-              src={gamer}
-              alt="boy playing video game on his computer"
-            />
+            <img className="graphics__image" src={gamer} alt="boy playing video game on his computer" />
           </div>
 
           <div className="graphics__text-container">
             <h2
               ref={myRef2}
               className={`graphics__subheader ${
-                myElementIsVisible2
-                  ? "graphics__subheader--up"
-                  : "graphics__subheader--down"
+                myElementIsVisible2 ? "graphics__subheader--up" : "graphics__subheader--down"
               }`}
             >
               Built to Connect
             </h2>
             <p
               ref={myRef2}
-              className={`graphics__text ${
-                myElementIsVisible2
-                  ? "graphics__text--up"
-                  : "graphics__text--down"
-              }`}
+              className={`graphics__text ${myElementIsVisible2 ? "graphics__text--up" : "graphics__text--down"}`}
             >
-              Link your EA Account with your favorite gaming platforms to import
-              friend lists and play together.
+              Link your EA Account with your favorite gaming platforms to import friend lists and play together.
             </p>
           </div>
         </div>
@@ -81,39 +68,26 @@ export default function GraphicsSection() {
           <div
             ref={myRef3}
             className={`graphics__image-container ${
-              myElementIsVisible3
-                ? "graphics__image-container--up"
-                : "graphics__image-container--down"
+              myElementIsVisible3 ? "graphics__image-container--up" : "graphics__image-container--down"
             }`}
           >
-            <img
-              className="graphics__image"
-              src={eaApp}
-              alt="soccer player in video game"
-            />
+            <img className="graphics__image" src={eaApp} alt="soccer player in video game" />
           </div>
           <div className="graphics__text-container">
             <h2
               ref={myRef4}
               className={`graphics__subheader ${
-                myElementIsVisible4
-                  ? "graphics__subheader--up"
-                  : "graphics__subheader--down"
+                myElementIsVisible4 ? "graphics__subheader--up" : "graphics__subheader--down"
               }`}
             >
               Optimized Gaming Experience
             </h2>
             <p
               ref={myRef4}
-              className={`graphics__text ${
-                myElementIsVisible4
-                  ? "graphics__text--up"
-                  : "graphics__text--down"
-              }`}
+              className={`graphics__text ${myElementIsVisible4 ? "graphics__text--up" : "graphics__text--down"}`}
             >
-              Experience an user inferface that's design for speed and optimized
-              gaming experience so that you can get into your games faster than
-              ever before.
+              Experience an user inferface that's design for speed and optimized gaming experience so that you can get
+              into your games faster than ever before.
             </p>
           </div>
         </div>

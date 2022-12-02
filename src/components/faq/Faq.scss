@@ -1,4 +1,4 @@
-@use '../../styles/partials/colors' as *;
+@use "../../styles/partials/colors" as *;
 
 .faq {
   display: flex;
@@ -20,9 +20,11 @@
   &__btn-contents {
     display: flex;
     align-items: center;
-    width: 60%;
+    padding: 1.5rem;
+    width: 100%;
 
     p {
+      margin-left: 1rem;
       font-size: 25px;
       font-weight: bold;
       color: white;

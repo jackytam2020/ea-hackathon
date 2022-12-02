@@ -1,6 +1,6 @@
 import "./HeroBanner.scss";
 
-import HeroImage from "../../assets/images/hero-banner.jpg";
+import HeroImage from "../../assets/images/hero-banner.png";
 import WindowsLogo from "../../assets/images/windowsLogo.png";
 
 export default function HeroBanner() {
