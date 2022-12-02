@@ -1,0 +1,26 @@
+.graphics {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__section-header {
+    margin: 0;
+    padding: 2rem 0;
+  }
+  //   &__image-text-wrapper {
+  //   }
+  &__image-container {
+    height: 300px;
+    width: 50%;
+    background-color: lightgray;
+    margin: 0 auto;
+  }
+  //   &__image {
+  //   }
+  &__text {
+    padding-top: 1.5rem;
+    width: 30%;
+    margin: 0 auto;
+  }
+}

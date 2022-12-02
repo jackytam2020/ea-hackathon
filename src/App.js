@@ -1,7 +1,12 @@
-import './App.scss';
+import "./App.scss";
+import GraphicsSection from "./components/graphicsSection/GraphicsSection";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <>
+      <GraphicsSection />
+    </>
+  );
 }
 
 export default App;
