@@ -29,8 +29,8 @@ function Faq(props) {
     <section className="faq">
       <div className="faq__download-btn">
         <div className="faq__btn-contents">
-          <p>Download EA App for </p>
           <img className="faq__windows-logo" src={WindowsLogo} />
+          <p>Download EA App for Windows</p>
         </div>
       </div>
 
