@@ -8,6 +8,7 @@ body {
   width: 100%;
   font-family: "Electronic Arts Text";
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -15,30 +16,68 @@ body {
   background-color: white;
   box-sizing: border-box;
   justify-content: space-between;
-  padding: 0rem 3rem;
   width: 100%;
   height: 4rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  // &__ctas {
+  //   margin: 0rem 3rem;
+  //   margin-left: auto;
+  //   margin-bottom: 1rem;
+  //   display: flex;
+
+  //   flex-direction: row;
+  //   align-items: center;
+  // }
 
   &__logo {
     height: 3rem;
     align-self: center;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
-  &__button {
-    padding: 1rem;
-    border: none;
-    outline: none;
-    font-family: "Electronic Arts Text";
-    font-weight: 700;
-    font-size: 1rem;
-    border-radius: 0.25rem;
+  &__drop-down-container {
+    display: flex;
+    flex-direction: row;
     background-color: white;
-    color: black;
-    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding: 0rem 3rem;
+  }
 
-    &:hover {
-      color: white;
-      background-color: black;
-    }
+  // &__button {
+  //   padding: 1rem;
+  //   border: none;
+  //   outline: none;
+  //   font-family: "Electronic Arts Text";
+  //   font-weight: 700;
+  //   font-size: 1rem;
+  //   border-radius: 0.25rem;
+  //   background-color: white;
+  //   color: white;
+  //   height: 100%;
+  //   border: 1px solid white;
+  //   background-color: inherit;
+  //   width: 145px;
+  //   height: 54px;
+  //   font-size: 18px;
+  //   line-height: 27px;
+  //   margin-left: 1rem;
+  //   &:hover {
+  //     color: white;
+  //     background-color: black;
+  //   }
+  // }
+
+  &__text {
+    color: black;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
   }
 }
