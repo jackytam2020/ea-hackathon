@@ -1,5 +1,5 @@
-@use "../../styles/partials/fonts";
-@use "../../styles/partials/colors" as *;
+@use '../../styles/partials/fonts';
+@use '../../styles/partials/colors' as *;
 
 @keyframes placeHolderShimmer {
   0% {
@@ -15,9 +15,8 @@
   box-sizing: border-box;
   align-items: center;
   width: 100%;
-  height: 75vh;
+  height: 65vh;
   padding: 3rem 8rem;
-  background-image: linear-gradient(to right, $EANavy 0%, $EANavy 45%, $EAMaroon);
 
   &__text {
     color: white;
@@ -46,7 +45,7 @@
   .button {
     padding: 1rem;
     outline: none;
-    font-family: "Electronic Arts Text";
+    font-family: 'Electronic Arts Text';
     font-size: 1rem;
     border-radius: 0.25rem;
     border: none;

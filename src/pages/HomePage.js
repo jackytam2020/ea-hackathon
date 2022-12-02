@@ -9,10 +9,14 @@ import HeroBanner from '../components/hero-banner/HeroBanner';
 function HomePage(props) {
   return (
     <div className="home">
-      <NavBar />
-      <HeroBanner />
-      <Carousel />
-      <GraphicsSection />
+      <div>
+        <NavBar />
+        <HeroBanner />
+        <Carousel />
+      </div>
+      <div>
+        <GraphicsSection />
+      </div>
     </div>
   );
 }
