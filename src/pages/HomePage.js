@@ -1,23 +1,26 @@
-import React from "react";
-import "./HomePage.scss";
+import React, { useState } from 'react';
+import './HomePage.scss';
 
-import NavBar from "../components/nav-bar/NavBar";
-import Carousel from "../components/Carousel/Carousel";
-import GraphicsSection from "../components/graphicsSection/GraphicsSection";
-import HeroBanner from "../components/hero-banner/HeroBanner";
-import Faq from "../components/faq/Faq";
+import NavBar from '../components/nav-bar/NavBar';
+import MenuSlideOut from '../components/MenuSlideOut/MenuSlideOut';
+import Carousel from '../components/Carousel/Carousel';
+import GraphicsSection from '../components/graphicsSection/GraphicsSection';
+import HeroBanner from '../components/hero-banner/HeroBanner';
+import Faq from '../components/faq/Faq';
 
 //footer
-import Footer from "../assets/images/footer.PNG";
+import Footer from '../assets/images/footer.PNG';
 
 function HomePage(props) {
+  const [hamMenuOpen, setHamMenuOpen] = useState(false);
   return (
     <div className="home">
-      <div>
-        <NavBar />
-        <HeroBanner />
-        <Carousel />
+      <MenuSlideOut hamMenuOpen={hamMenuOpen} setHamMenuOpen={setHamMenuOpen} />
+      <div className="home__nav">
+        <NavBar setHamMenuOpen={setHamMenuOpen} />
       </div>
+      <HeroBanner />
+      <Carousel />
       <div>
         <GraphicsSection />
       </div>

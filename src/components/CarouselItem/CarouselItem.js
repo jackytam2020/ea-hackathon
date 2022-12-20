@@ -18,7 +18,7 @@ function CarouselItem(props) {
       <VideoModal modalIsOpen={modalIsOpen} videoSrc={props.videoSrc} />
       <img
         className="carousel-item__img"
-        src={require('../../assets/images/' + props.src)}
+        src={props.src}
         alt={props.name}
         onClick={() => {
           setModalIsOpen(true);

@@ -1,11 +1,16 @@
-@use "../../styles/partials/fonts" as *;
-@use "../../styles/partials/colors" as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/colors' as *;
 
 .header {
   display: flex;
   background-color: white;
   box-sizing: border-box;
-  background-image: linear-gradient(to right, $EANavy 0%, $EANavy 45%, $EAMaroon);
+  background-image: linear-gradient(
+    to right,
+    $EANavy 0%,
+    $EANavy 45%,
+    $EAMaroon
+  );
   justify-content: flex-end;
   align-items: center;
   padding: 1rem 3rem;
@@ -13,7 +18,7 @@
   transition-duration: 0.4s;
 
   &--hidden {
-    transform: translate3d(0, -40px, 0);
+    transform: translateY(0, -40px, 0);
   }
 
   &__button {
@@ -22,7 +27,7 @@
     height: 2.75rem;
     padding: 0rem 1rem;
     outline: none;
-    font-family: "Electronic Arts Text";
+    font-family: 'Electronic Arts Text';
     font-size: 1rem;
     border-radius: 0.25rem;
     border: 0.0625rem solid white;
