@@ -1,8 +1,10 @@
+@use '../../styles/partials/breakpoints' as *;
+
 .video-modal {
   &__overlay {
     position: fixed;
     inset: 0px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   &__modal-container {
@@ -11,5 +13,17 @@
     height: 400px;
     width: 50rem;
     position: relative;
+  }
+}
+
+@include small() {
+  .video-modal {
+    &__modal-container {
+      margin: 0 auto;
+      margin-top: 10rem;
+      height: 400px;
+      width: 100%;
+      position: relative;
+    }
   }
 }

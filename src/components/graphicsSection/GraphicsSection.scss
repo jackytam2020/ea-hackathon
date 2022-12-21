@@ -1,74 +1,8 @@
 .graphics {
-  margin: 8.5rem 25rem 7rem;
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  &__subheader {
-    padding-top: 1.5rem;
-    margin: 0;
-    font-size: 2rem;
-    color: white;
-    &--up {
-      transition: transform 400ms ease-in;
-      transform: translateY(0);
-    }
-    &--down {
-      transform: translateY(150%);
-      transition: transform 500ms ease-in;
-    }
-  }
-  &__image-text-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 2rem;
-
-    align-items: center;
-  }
-  &__image-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    align-items: center;
-    border-radius: 1.25rem;
-    opacity: 0;
-    &--up {
-      transition: all 0.5s;
-      opacity: 1;
-      transform: translateY(0);
-    }
-    &--down {
-      transform: translateY(15%);
-      transition: transform 400ms ease-in;
-      visibility: hidden;
-    }
-  }
-  &__image {
-    height: 22.188rem;
-    width: 44.625rem;
-    margin: 0;
-    border-radius: 1.25rem;
-  }
-  &__text {
-    padding-top: 1.5rem;
-    margin: 0;
-    font-size: 18px;
-    line-height: 27px;
-    color: white;
-    &--up {
-      transition: transform 400ms ease-in;
-      transform: translateY(0);
-    }
-    &--down {
-      transform: translateY(15%);
-      transition: transform 500ms ease-in;
-      visibility: hidden;
-    }
-  }
-
-  &__text-container {
-    text-align: center;
-    width: 50%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+  row-gap: 5rem;
+  margin-bottom: 5rem;
 }

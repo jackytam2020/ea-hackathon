@@ -4,6 +4,7 @@ import DropDownIcon from '../../assets/icons/drop-down-icon.svg';
 import UpArrowIcon from '../../assets/icons/up-arrow-icon.svg';
 function FaqItem(props) {
   const [openResponse, setOpenResponse] = useState(false);
+
   return (
     <div className="faq-item-row">
       <div className="faq-item">
