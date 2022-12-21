@@ -22,5 +22,5 @@ axios, react-modal, react-icons, react-intersection-observer, react-use-draggabl
 npm i
 ```
 ### Co-Authors
-Wilson Gee: [Github](https://github.com/wilsonn-g)
+Wilson Gee: [Github](https://github.com/wilsonn-g) <br/>
 Priscila M. Moura: [Github](https://github.com/PriscilaMMoura)
