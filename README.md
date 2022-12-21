@@ -1,7 +1,9 @@
-# Getting Started with Create React App
+# BrainStation Industry Project - Electronic Arts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A landing page for the EA app
+![ea-app](https://user-images.githubusercontent.com/43556396/209019316-f6c2e732-7a12-4d70-b6a7-ca78657117a6.png)
 
+https://img.shields.io/github/last-commit/jackytam2020/ea-hackathon
 ## Available Scripts
 
 In the project directory, you can run:
