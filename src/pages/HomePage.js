@@ -7,9 +7,7 @@ import Carousel from '../components/Carousel/Carousel';
 import GraphicsSection from '../components/graphicsSection/GraphicsSection';
 import HeroBanner from '../components/hero-banner/HeroBanner';
 import Faq from '../components/faq/Faq';
-
-//footer
-import Footer from '../assets/images/footer.PNG';
+import Footer from '../components/Footer/Footer';
 
 function HomePage(props) {
   const [hamMenuOpen, setHamMenuOpen] = useState(false);
@@ -27,8 +25,8 @@ function HomePage(props) {
       <div>
         <Faq />
       </div>
-      <div>
-        <img src={Footer} className="footer"></img>
+      <div className="home__footer">
+        <Footer />
       </div>
     </div>
   );

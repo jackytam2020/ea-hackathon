@@ -9,9 +9,9 @@ export default function HeroBanner() {
       <div className="hero__top">
         <div className="hero--left">
           <div className="hero__text">
-            <h1 className="hero__title">The EA app for Windows</h1>
+            <h1 className="hero__title">Introducing the EA app</h1>
             <h3 className="hero__subtitle">
-              Powering EA’s next generation of PC gaming
+              A better, faster, more connected way to gaming
             </h3>
           </div>
           <div className="hero__buttons">
@@ -33,13 +33,14 @@ export default function HeroBanner() {
           ></img>
         </div>
       </div>
-      {/* <div className="hero__carousel-text">
-        <h3 className="hero__subtitle">Explore & Discover</h3>
+      <div className="hero__carousel-text">
+        <h3 className="hero__carousel-title">Explore & Discover</h3>
         <p className="hero__subtext">
-          Explore an ever-expanding library of titles ranging from indie darlings to triple-A hits. Discover EA’s newest
-          releases and see what your friends are playing
+          Explore an ever-expanding library of titles ranging from indie
+          darlings to triple-A hits. Discover EA’s newest releases and see what
+          your friends are playing
         </p>
-      </div> */}
+      </div>
     </article>
   );
 }

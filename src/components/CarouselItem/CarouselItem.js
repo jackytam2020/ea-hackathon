@@ -15,15 +15,17 @@ function CarouselItem(props) {
   };
   return (
     <div className="carousel-item">
-      <VideoModal modalIsOpen={modalIsOpen} videoSrc={props.videoSrc} />
-      <img
-        className="carousel-item__img"
-        src={props.src}
-        alt={props.name}
-        onClick={() => {
-          setModalIsOpen(true);
-        }}
-      ></img>
+      <div className="carousel-item__container">
+        <VideoModal modalIsOpen={modalIsOpen} videoSrc={props.videoSrc} />
+        <img
+          className="carousel-item__img"
+          src={props.src}
+          alt={props.name}
+          onClick={() => {
+            setModalIsOpen(true);
+          }}
+        ></img>
+      </div>
     </div>
   );
 }

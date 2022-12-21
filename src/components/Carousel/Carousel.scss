@@ -1,23 +1,15 @@
+@use '../../styles/partials/breakpoints' as *;
+
 .carousel-container {
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
 }
 
 .carousel {
   display: grid;
-  height: 320px;
   grid-auto-flow: column;
-  grid-auto-columns: 15%;
+  grid-auto-columns: 22%;
   overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  gap: 2rem;
-
-  &__item {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    overflow: hidden;
-  }
+  column-gap: 1rem;
 }
 
 .carousel::-webkit-scrollbar {
