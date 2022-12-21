@@ -28,7 +28,7 @@ body {
   }
 
   &__logo {
-    height: 2.5rem;
+    height: 2rem;
     align-self: center;
     padding-right: 1.5rem;
     padding-top: 0.5rem;
@@ -55,15 +55,26 @@ body {
   }
 
   &__ham-icon {
-    padding-right: 1rem;
+    // min-width: 38px;
+    width: 1rem;
+    min-width: 1rem;
+    height: auto;
+    margin-right: 1rem;
     cursor: pointer;
   }
 }
 
 @include small() {
   .nav {
+    &__drop-down-container {
+      padding: 0rem 1rem;
+    }
     &__text {
       display: none;
+    }
+
+    &__logo {
+      height: 1.5rem;
     }
   }
 }

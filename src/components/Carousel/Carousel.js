@@ -26,7 +26,9 @@ function Carousel(props) {
     <div className="carousel-container">
       <div className="carousel" {...events} ref={ref}>
         {carouselImgs.map((game) => {
-          return <CarouselItem {...game} alt="electronic arts game" />;
+          return (
+            <CarouselItem key={game._id} {...game} alt="electronic arts game" />
+          );
         })}
       </div>
     </div>

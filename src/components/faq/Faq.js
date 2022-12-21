@@ -31,7 +31,7 @@ function Faq(props) {
 
       <div className="faq__item-list">
         {faqItems.map((item) => (
-          <FaqItem {...item} />
+          <FaqItem key={item._id} {...item} />
         ))}
       </div>
     </section>
