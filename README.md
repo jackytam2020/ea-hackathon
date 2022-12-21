@@ -11,6 +11,9 @@ This is a fully responsive landing page for the EA App built during our 24 hour 
 You can view the backend codebase here:
 [ea-hackathon-api](https://github.com/jackytam2020/ea-hackathon-api)
 
+### Dependencies
+axios, react-modal, react-icons, react-intersection-observer, react-use-draggable-scroll, sass
+
 ### Installation 
 * Download the file
 * Run the following command to install node_modules
@@ -18,8 +21,6 @@ You can view the backend codebase here:
 ```
 npm i
 ```
-
-
 ### Co-Authors
 Wilson Gee: [Github](https://github.com/wilsonn-g)
 Priscila M. Moura: [Github](https://github.com/PriscilaMMoura)
