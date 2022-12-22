@@ -5,9 +5,12 @@ import Logo from '../../assets/logos/EALogo.png';
 import chevron from '../../assets/images/arrow_drop_down-24px.svg';
 import { RxCross2 } from 'react-icons/rx';
 
-function MenuSlideOut({ hamMenuOpen, setHamMenuOpen }) {
+function MenuSlideOut({ hamMenuOpen, setHamMenuOpen, hamMenuRef }) {
   return (
-    <div className={hamMenuOpen ? 'menu-slide-out--active' : 'menu-slide-out'}>
+    <div
+      className={hamMenuOpen ? 'menu-slide-out--active' : 'menu-slide-out'}
+      ref={hamMenuRef}
+    >
       <div className="menu-slide-out__top-bar">
         <img className="menu-slide-out__logo" src={Logo} alt={'logo'} />
         <RxCross2

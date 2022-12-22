@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './HomePage.scss';
 
 import NavBar from '../components/nav-bar/NavBar';
@@ -11,9 +11,27 @@ import Footer from '../components/Footer/Footer';
 
 function HomePage(props) {
   const [hamMenuOpen, setHamMenuOpen] = useState(false);
+
+  let hamMenuRef = useRef();
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside, true);
+  }, []);
+
+  //close hamburger menu slide out when clicked outside
+  const handleClickOutside = (e) => {
+    if (!hamMenuRef.current.contains(e.target)) {
+      setHamMenuOpen(false);
+    }
+  };
+
   return (
     <div className="home">
-      <MenuSlideOut hamMenuOpen={hamMenuOpen} setHamMenuOpen={setHamMenuOpen} />
+      <MenuSlideOut
+        hamMenuOpen={hamMenuOpen}
+        setHamMenuOpen={setHamMenuOpen}
+        hamMenuRef={hamMenuRef}
+      />
       <div className="home__nav">
         <NavBar setHamMenuOpen={setHamMenuOpen} />
       </div>
