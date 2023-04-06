@@ -1,6 +1,6 @@
 # BrainStation Industry Project - Electronic Arts
 
-A fully responsive landing page for the EA app
+[A fully responsive landing page](https://ea-hackathon.vercel.app/) for the EA app
 
 ![ea-app](https://user-images.githubusercontent.com/43556396/209019316-f6c2e732-7a12-4d70-b6a7-ca78657117a6.png)
 
