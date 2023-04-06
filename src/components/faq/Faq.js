@@ -7,10 +7,8 @@ import axios from 'axios';
 function Faq(props) {
   const [faqItems, setFaqItems] = useState([]);
 
-  const PORT = process.env.REACT_APP_PORT;
-
   const getFaqItems = async () => {
-    const response = await axios.get(`http://localhost:${PORT}/faq`);
+    const response = await axios.get(`${process.env.REACT_APP_SERVER}/faq`);
     setFaqItems(response.data);
   };
 
@@ -22,7 +20,11 @@ function Faq(props) {
     <section className="faq">
       <div className="faq__download-btn">
         <div className="faq__btn-contents">
-          <img className="faq__windows-logo" src={WindowsLogo} />
+          <img
+            className="faq__windows-logo"
+            src={WindowsLogo}
+            alt={'windows-logo'}
+          />
           <p>Download EA App for Windows</p>
         </div>
       </div>

@@ -1,6 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './CarouselItem.scss';
-import Modal from 'react-modal';
 import VideoModal from '../VideoModal/VideoModal';
 
 function CarouselItem(props) {

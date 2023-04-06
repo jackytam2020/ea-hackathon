@@ -11,10 +11,8 @@ function Carousel(props) {
 
   const [carouselImgs, setCarouselImgs] = useState([]);
 
-  const PORT = process.env.REACT_APP_PORT;
-
   const getCarouselImages = async () => {
-    const response = await axios.get(`http://localhost:${PORT}/images`);
+    const response = await axios.get(`${process.env.REACT_APP_SERVER}/images`);
     setCarouselImgs(response.data);
   };
 

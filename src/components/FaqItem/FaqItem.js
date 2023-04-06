@@ -15,6 +15,7 @@ function FaqItem(props) {
           onClick={() => {
             setOpenResponse(!openResponse);
           }}
+          alt="drop-down-icon"
         />
       </div>
 
@@ -31,6 +32,7 @@ function FaqItem(props) {
             onClick={() => {
               setOpenResponse(false);
             }}
+            alt="close-icon"
           />
         </div>
       )}

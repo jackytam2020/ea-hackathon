@@ -11,7 +11,12 @@ function VideoModal(props) {
         className="video-modal__modal-container"
         overlayClassName="video-modal__overlay"
       >
-        <iframe width="100%" height="400px" src={props.videoSrc}></iframe>
+        <iframe
+          width="100%"
+          height="400px"
+          title={props.name}
+          src={props.videoSrc}
+        ></iframe>
       </Modal>
     </div>
   );
